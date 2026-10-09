@@ -1,0 +1,13 @@
+node_modules/
+dist/
+review/
+Ceramics by Caitlin/
+media/originals/
+media/video-previews/
+media/video-inventory.json
+media/filename-map.json
+*.backup
+*.tmp
+.env
+.env.*
+*.log
