@@ -21,7 +21,13 @@ The supplied 45 HEIC photographs have been converted to JPG and grouped into 12 
 
 ## Publishing
 
-Upload `index.html`, `styles.css`, `app.js`, `content.js`, and `images` to a static host. After local edits, upload the changed content.js and any new photos. Instagram remains the contact and repeat-order route. Custom ordering is not offered on the site.
+Repository: https://github.com/apantazi/ceramicsbycaitlin. Website: https://ceramicsbycaitlin.com.
+
+Pushing changes to `main` publishes the portfolio automatically through GitHub Pages. After saving local edits, commit and push `catalog.json` and any new photos or videos. The build generates the public `content.js` from the catalog.
+
+Run `npm run build` to create the public site in `dist`. The deployment includes the portfolio and browser-ready media, and excludes the local editor, camera originals, and review files. See `DOMAIN-SETUP.md` for the DNS records and GitHub Pages settings.
+
+Instagram remains the contact and repeat-order route. Custom ordering is not offered on the site.
 
 The editor is a local backend bound to 127.0.0.1, with same-origin writes and a backup on save. It has no public login. Do not expose this server or deploy the editor as a public backend. A hosted editor needs authenticated hosting before Caitlin can update the public site from any device.
 
@@ -35,4 +41,4 @@ For static publishing, also upload `media/photos` and `media/videos`. Do not upl
 
 HTML is saved as UTF-8, and the local server specifies UTF-8 for text responses. Always use explicit UTF-8 when editing these files programmatically.
 
-Studio photos open in a large viewer; clearly labeled film cards open real MP4 videos with playback controls. Both clips are silent and user-triggered. The viewer supports previous/next buttons, arrow keys, and Escape; closing it stops playback.
+Studio photos open in a large viewer; video cards open real MP4 videos with playback controls. Both clips are silent and user-triggered. The viewer supports previous/next buttons, arrow keys, and Escape; closing it stops playback.

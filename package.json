@@ -2,5 +2,5 @@
   "name": "ceramics-by-caitlin",
   "version": "1.0.0",
   "private": true,
-  "scripts": { "dev": "node server.js", "start": "node server.js" }
+  "scripts": { "dev": "node server.js", "start": "node server.js", "build": "node scripts/build-site.js" }
 }
